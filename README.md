@@ -1,2 +1,2 @@
-# Mastercard-interns
+# Demo project
 This is our first group collaboration 
