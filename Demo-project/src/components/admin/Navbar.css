@@ -1,0 +1,173 @@
+.admin-navbar {
+  height: 80px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 30px;
+
+  background: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.navbar-left h1 {
+  margin: 0;
+
+  color: #0f172a;
+
+  font-size: 20px;
+  font-weight: 750;
+}
+
+.navbar-left p {
+  margin: 4px 0 0;
+
+  color: #94a3b8;
+
+  font-size: 12px;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.notification-button {
+  position: relative;
+
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #e2e8f0;
+  border-radius: 9px;
+
+  background: #ffffff;
+  color: #64748b;
+
+  font-size: 19px;
+
+  cursor: pointer;
+}
+
+.notification-button:hover {
+  background: #f8fafc;
+}
+
+.notification-dot {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  width: 6px;
+  height: 6px;
+
+  border-radius: 50%;
+
+  background: #14b8a6;
+}
+
+.navbar-divider {
+  width: 1px;
+  height: 32px;
+
+  background: #e2e8f0;
+}
+
+.navbar-admin {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.navbar-avatar {
+  width: 36px;
+  height: 36px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #eef2ff;
+  color: #4f46e5;
+
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.navbar-admin-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.navbar-admin-info strong {
+  color: #0f172a;
+  font-size: 12px;
+}
+
+.navbar-admin-info span {
+  color: #94a3b8;
+  font-size: 10px;
+}
+
+.mobile-menu-button {
+  display: none;
+
+  width: 38px;
+  height: 38px;
+
+  border: 1px solid #e2e8f0;
+  border-radius: 9px;
+
+  background: #ffffff;
+  color: #475569;
+
+  font-size: 18px;
+}
+
+@media (max-width: 900px) {
+  .admin-navbar {
+    padding: 0 20px;
+  }
+
+  .mobile-menu-button {
+    display: block;
+  }
+
+  .navbar-admin-info,
+  .navbar-divider {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .admin-navbar {
+    height: 70px;
+  }
+
+  .navbar-left h1 {
+    font-size: 17px;
+  }
+
+  .navbar-left p {
+    display: none;
+  }
+
+  .navbar-right {
+    gap: 8px;
+  }
+}

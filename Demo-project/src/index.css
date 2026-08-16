@@ -1,0 +1,206 @@
+/* ========================================
+   GOOGLE FONT
+======================================== */
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap");
+
+/* ========================================
+   ROOT VARIABLES
+======================================== */
+
+:root {
+  /* Primary */
+  --primary: #2563eb;
+  --primary-dark: #1d4ed8;
+  --primary-light: #eff6ff;
+
+  /* Secondary */
+  --secondary: #7c3aed;
+  --secondary-light: #f5f3ff;
+
+  /* Accent */
+  --accent: #06b6d4;
+
+  /* Success */
+  --success: #16a34a;
+  --success-light: #f0fdf4;
+
+  /* Warning */
+  --warning: #f59e0b;
+  --warning-light: #fffbeb;
+
+  /* Danger */
+  --danger: #dc2626;
+  --danger-light: #fef2f2;
+
+  /* Text */
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #94a3b8;
+
+  /* Background */
+  --background: #f8fafc;
+  --surface: #ffffff;
+
+  /* Borders */
+  --border: #e2e8f0;
+  --border-light: #f1f5f9;
+
+  /* Shadows */
+  --shadow-sm:
+    0 1px 2px rgba(15, 23, 42, 0.05);
+
+  --shadow-md:
+    0 4px 12px rgba(15, 23, 42, 0.08);
+
+  --shadow-lg:
+    0 10px 30px rgba(15, 23, 42, 0.10);
+
+  /* Radius */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+
+  /* Transition */
+  --transition: 0.2s ease;
+}
+
+/* ========================================
+   RESET
+======================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ========================================
+   HTML
+======================================== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ========================================
+   BODY
+======================================== */
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+
+  background: var(--background);
+  color: var(--text-primary);
+
+  font-family: "DM Sans", sans-serif;
+
+  line-height: 1.5;
+
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ========================================
+   HEADINGS
+======================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Manrope", sans-serif;
+  color: var(--text-primary);
+}
+
+/* ========================================
+   BUTTON
+======================================== */
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+/* ========================================
+   INPUTS
+======================================== */
+
+input,
+textarea,
+select {
+  outline: none;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: var(--primary);
+}
+
+/* ========================================
+   IMAGES
+======================================== */
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ========================================
+   UL / OL
+======================================== */
+
+ul,
+ol {
+  list-style: none;
+}
+
+/* ========================================
+   DISABLED
+======================================== */
+
+button:disabled,
+input:disabled,
+select:disabled,
+textarea:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* ========================================
+   COMMON UTILITY
+======================================== */
+
+.text-primary {
+  color: var(--text-primary);
+}
+
+.text-secondary {
+  color: var(--text-secondary);
+}
+
+.text-muted {
+  color: var(--text-muted);
+}
+
+.text-success {
+  color: var(--success);
+}
+
+.text-danger {
+  color: var(--danger);
+}
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
