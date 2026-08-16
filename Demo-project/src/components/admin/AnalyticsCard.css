@@ -1,0 +1,76 @@
+.analytics-card {
+  padding: 20px;
+
+  background: #ffffff;
+
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.03);
+}
+
+.analytics-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.analytics-icon {
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
+
+  background: #ccfbf1;
+  color: #0f766e;
+
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.analytics-percentage {
+  padding: 5px 8px;
+
+  border-radius: 6px;
+
+  background: #ecfdf5;
+  color: #15803d;
+
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.analytics-content {
+  margin-top: 17px;
+}
+
+.analytics-content p {
+  margin: 0;
+
+  color: #64748b;
+
+  font-size: 11px;
+}
+
+.analytics-content h3 {
+  margin: 5px 0 0;
+
+  color: #0f172a;
+
+  font-size: 24px;
+  font-weight: 750;
+}
+
+.analytics-content span {
+  display: block;
+
+  margin-top: 4px;
+
+  color: #94a3b8;
+
+  font-size: 10px;
+}

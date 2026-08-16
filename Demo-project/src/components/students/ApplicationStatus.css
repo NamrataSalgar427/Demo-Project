@@ -1,0 +1,202 @@
+.application-status {
+  width: 100%;
+  max-width: 760px;
+
+  padding: 30px;
+
+  background: #ffffff;
+
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+
+  box-shadow:
+    0 12px 35px rgba(15, 23, 42, 0.05);
+}
+
+.status-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  padding-bottom: 22px;
+
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.status-label {
+  color: #14b8a6;
+
+  font-size: 10px;
+  font-weight: 800;
+
+  letter-spacing: 0.08em;
+}
+
+.status-header h1 {
+  margin: 5px 0 4px;
+
+  color: #0f172a;
+
+  font-size: 23px;
+  font-weight: 750;
+}
+
+.status-header p {
+  margin: 0;
+
+  color: #64748b;
+
+  font-size: 12px;
+}
+
+.status-id {
+  min-width: 145px;
+
+  padding: 11px 13px;
+
+  border: 1px solid #e2e8f0;
+  border-radius: 9px;
+
+  background: #f8fafc;
+}
+
+.status-id span {
+  display: block;
+
+  color: #94a3b8;
+
+  font-size: 9px;
+  font-weight: 700;
+
+  text-transform: uppercase;
+}
+
+.status-id strong {
+  display: block;
+
+  margin-top: 4px;
+
+  color: #4f46e5;
+
+  font-family: monospace;
+  font-size: 11px;
+
+  word-break: break-all;
+}
+
+.status-event {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+
+  margin-top: 22px;
+  padding: 15px;
+
+  border-radius: 10px;
+
+  background: #f8fafc;
+}
+
+.status-event span {
+  color: #94a3b8;
+
+  font-size: 9px;
+  font-weight: 800;
+
+  letter-spacing: 0.06em;
+}
+
+.status-event strong {
+  color: #0f172a;
+
+  font-size: 14px;
+}
+
+.status-event small {
+  color: #94a3b8;
+
+  font-size: 10px;
+}
+
+.status-progress {
+  margin-top: 28px;
+
+  padding: 5px 5px;
+}
+
+.status-action {
+  display: flex;
+  justify-content: flex-end;
+
+  margin-top: 28px;
+
+  padding-top: 22px;
+
+  border-top: 1px solid #f1f5f9;
+}
+
+.completed-message {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 13px 15px;
+
+  border-radius: 10px;
+
+  background: #ecfdf5;
+}
+
+.completed-message > span {
+  width: 30px;
+  height: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background: #16a34a;
+  color: #ffffff;
+
+  font-weight: 700;
+}
+
+.completed-message strong {
+  color: #166534;
+
+  font-size: 12px;
+}
+
+.completed-message p {
+  margin: 2px 0 0;
+
+  color: #15803d;
+
+  font-size: 10px;
+}
+
+@media (max-width: 600px) {
+  .application-status {
+    padding: 22px 18px;
+  }
+
+  .status-header {
+    flex-direction: column;
+  }
+
+  .status-id {
+    width: 100%;
+  }
+
+  .status-action {
+    justify-content: stretch;
+  }
+}
