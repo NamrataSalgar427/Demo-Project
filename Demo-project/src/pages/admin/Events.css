@@ -1,0 +1,182 @@
+.events-summary {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
+  gap: 14px;
+
+  margin-bottom: 22px;
+}
+
+.events-summary-card {
+  padding: 18px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 6px;
+
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+
+  background: #ffffff;
+}
+
+.events-summary-card span {
+  color: #94a3b8;
+
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.events-summary-card strong {
+  color: #0f172a;
+
+  font-size: 23px;
+  font-weight: 800;
+}
+
+/* Toolbar */
+
+.events-toolbar {
+  display: flex;
+  align-items: flex-end;
+
+  gap: 12px;
+
+  padding: 16px;
+
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+
+  background: #ffffff;
+}
+
+.events-search {
+  flex: 1;
+}
+
+.events-filter {
+  width: 180px;
+}
+
+/* Result count */
+
+.events-result-count {
+  margin: 18px 0 12px;
+
+  color: #94a3b8;
+
+  font-size: 10px;
+}
+
+.events-result-count strong {
+  color: #475569;
+}
+
+/* Grid */
+
+.events-page-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 16px;
+}
+
+/* Empty */
+
+.events-empty {
+  min-height: 300px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 40px;
+
+  border: 1px dashed #cbd5e1;
+  border-radius: 14px;
+
+  background: #ffffff;
+
+  text-align: center;
+}
+
+.events-empty-icon {
+  width: 48px;
+  height: 48px;
+
+  margin-bottom: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 13px;
+
+  background: #eef2ff;
+
+  color: #4f46e5;
+
+  font-size: 20px;
+}
+
+.events-empty h3 {
+  margin: 0;
+
+  color: #0f172a;
+
+  font-size: 15px;
+}
+
+.events-empty p {
+  margin: 5px 0 18px;
+
+  color: #94a3b8;
+
+  font-size: 11px;
+}
+
+/* Responsive */
+
+@media (max-width: 1100px) {
+  .events-page-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 800px) {
+  .events-summary {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+  .events-toolbar {
+    align-items: stretch;
+
+    flex-direction: column;
+  }
+
+  .events-filter {
+    width: 100%;
+  }
+}
+
+@media (max-width: 550px) {
+  .events-summary {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .events-page-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .events-summary-card strong {
+    font-size: 20px;
+  }
+}

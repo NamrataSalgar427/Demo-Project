@@ -1,0 +1,83 @@
+/* ========================================
+   APP GLOBAL STYLES
+======================================== */
+
+#root {
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* ========================================
+   PAGE CONTAINER
+======================================== */
+
+.page-container {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* ========================================
+   COMMON LAYOUT
+======================================== */
+
+.app-container {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* ========================================
+   LINKS
+======================================== */
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ========================================
+   BUTTON RESET
+======================================== */
+
+button {
+  font-family: inherit;
+}
+
+/* ========================================
+   INPUT RESET
+======================================== */
+
+input,
+textarea,
+select {
+  font-family: inherit;
+}
+
+/* ========================================
+   SCROLLBAR
+======================================== */
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* ========================================
+   SELECTION
+======================================== */
+
+::selection {
+  background: #dbeafe;
+  color: #172554;
+}

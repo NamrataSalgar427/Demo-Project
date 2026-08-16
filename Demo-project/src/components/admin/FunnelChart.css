@@ -1,0 +1,85 @@
+.funnel-card {
+  padding: 22px;
+
+  background: #ffffff;
+
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+}
+
+.funnel-header h3 {
+  margin: 0;
+
+  color: #0f172a;
+
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.funnel-header p {
+  margin: 4px 0 0;
+
+  color: #94a3b8;
+
+  font-size: 11px;
+}
+
+.funnel-body {
+  margin-top: 25px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.funnel-stage-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 7px;
+}
+
+.funnel-stage-info span {
+  color: #64748b;
+
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.funnel-stage-info strong {
+  color: #0f172a;
+
+  font-size: 12px;
+}
+
+.funnel-track {
+  width: 100%;
+  height: 9px;
+
+  overflow: hidden;
+
+  border-radius: 20px;
+
+  background: #f1f5f9;
+}
+
+.funnel-bar {
+  height: 100%;
+
+  border-radius: inherit;
+
+  transition: width 0.5s ease;
+}
+
+.funnel-bar.registered {
+  background: #4f46e5;
+}
+
+.funnel-bar.started {
+  background: #14b8a6;
+}
+
+.funnel-bar.completed {
+  background: #16a34a;
+}

@@ -1,0 +1,265 @@
+.success-container {
+  position: relative;
+  z-index: 2;
+
+  width: min(500px, calc(100% - 30px));
+
+  margin: auto;
+
+  padding: 45px 0 30px;
+}
+
+.success-shape-one {
+  width: 320px;
+  height: 320px;
+
+  top: -180px;
+  left: -130px;
+
+  background: rgba(20, 184, 166, 0.06);
+}
+
+.success-shape-two {
+  width: 250px;
+  height: 250px;
+
+  right: -100px;
+  bottom: -120px;
+
+  background: rgba(79, 70, 229, 0.06);
+}
+
+/* Card */
+
+.registration-success-card {
+  padding: 35px 30px;
+
+  border: 1px solid #e2e8f0;
+  border-radius: 17px;
+
+  background: white;
+
+  text-align: center;
+
+  box-shadow:
+    0 20px 55px
+      rgba(15, 23, 42, 0.07);
+}
+
+/* Check */
+
+.success-check {
+  width: 62px;
+  height: 62px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 auto 15px;
+
+  border-radius: 50%;
+
+  background: #dcfce7;
+
+  color: #16a34a;
+
+  font-size: 25px;
+  font-weight: 800;
+
+  box-shadow:
+    0 0 0 7px #f0fdf4;
+}
+
+.success-badge {
+  display: inline-block;
+
+  padding: 5px 9px;
+
+  border-radius: 20px;
+
+  background: #ecfdf5;
+
+  color: #16a34a;
+
+  font-size: 7px;
+  font-weight: 800;
+
+  letter-spacing: 0.08em;
+}
+
+.registration-success-card h1 {
+  margin: 12px 0 7px;
+
+  color: #0f172a;
+
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.success-description {
+  max-width: 390px;
+
+  margin: auto;
+
+  color: #94a3b8;
+
+  font-size: 9px;
+
+  line-height: 1.6;
+}
+
+/* Tracking */
+
+.tracking-id-card {
+  margin: 25px 0 14px;
+
+  padding: 15px;
+
+  border: 1px solid #e0e7ff;
+  border-radius: 11px;
+
+  background: #f8faff;
+
+  text-align: left;
+}
+
+.tracking-id-card > span {
+  color: #94a3b8;
+
+  font-size: 7px;
+  font-weight: 800;
+
+  letter-spacing: 0.08em;
+}
+
+.tracking-id-row {
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+
+  margin-top: 8px;
+}
+
+.tracking-id-row strong {
+  flex: 1;
+
+  overflow: hidden;
+
+  color: #4f46e5;
+
+  font-family: monospace;
+
+  font-size: 11px;
+
+  text-overflow: ellipsis;
+}
+
+.tracking-id-row button {
+  padding: 6px 9px;
+
+  border: none;
+  border-radius: 6px;
+
+  background: #eef2ff;
+
+  color: #4f46e5;
+
+  font-size: 7px;
+  font-weight: 750;
+
+  cursor: pointer;
+}
+
+.tracking-id-row button:hover {
+  background: #e0e7ff;
+}
+
+/* Info */
+
+.success-info {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 8px;
+
+  padding: 10px;
+
+  margin-bottom: 18px;
+
+  border-radius: 8px;
+
+  background: #f8fafc;
+
+  text-align: left;
+}
+
+.success-info-icon {
+  width: 16px;
+  height: 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background: #e0e7ff;
+
+  color: #4f46e5;
+
+  font-size: 8px;
+  font-weight: 800;
+}
+
+.success-info p {
+  margin: 1px 0 0;
+
+  color: #94a3b8;
+
+  font-size: 7px;
+
+  line-height: 1.5;
+}
+
+/* Secondary */
+
+.success-secondary-button {
+  margin-top: 10px;
+
+  border: none;
+
+  background: transparent;
+
+  color: #94a3b8;
+
+  font-family: inherit;
+
+  font-size: 8px;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.success-secondary-button:hover {
+  color: #4f46e5;
+}
+
+/* Mobile */
+
+@media (max-width: 500px) {
+  .success-container {
+    padding-top: 25px;
+  }
+
+  .registration-success-card {
+    padding: 27px 18px;
+  }
+
+  .tracking-id-row strong {
+    font-size: 9px;
+  }
+}
